@@ -31,7 +31,7 @@ STOCKS = {
     "COST": "Costco",
     # --- Europe ---
     "ASML.AS": "ASML", "SAP.DE": "SAP", "NESN.SW": "Nestle", "NOVO-B.CO": "Novo Nordisk",
-    "MC.PA": "LVMH", "SHEL.L": "Shell", "AZN.L": "AstraZeneca", "ROG.SW": "Roche",
+    "MC.PA": "LVMH", "SHEL.L": "Shell", "AZN.L": "AstraZeneca", "RO.SW": "Roche",
     "SIE.DE": "Siemens", "TTE.PA": "TotalEnergies", "HSBA.L": "HSBC",
     "OR.PA": "L'Oreal", "AIR.PA": "Airbus", "ALV.DE": "Allianz",
     # --- Asia-Pacific ---
