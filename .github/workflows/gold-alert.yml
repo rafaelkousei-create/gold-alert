@@ -2,7 +2,7 @@ name: Gold alert
 
 on:
   schedule:
-    - cron: "5 * * * *"
+    - cron: "3,18,33,48 * * * *"
   workflow_dispatch:
     inputs:
       test:
