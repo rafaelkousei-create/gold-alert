@@ -2,8 +2,8 @@ name: Gold alert
 
 on:
   schedule:
-    - cron: "5 * * * *"   # every hour at minute 5 (UTC), 24 hours a day
-  workflow_dispatch:      # lets you start it manually with the "Run workflow" button
+    - cron: "5 * * * *"
+  workflow_dispatch:
     inputs:
       test:
         description: "Send a test message only"
@@ -19,8 +19,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
-      - run: pip install -r requirements.txt
+      - run: pip install requests pandas
       - run: python gold_alert.py
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
