@@ -17,10 +17,10 @@ import requests
 
 # ----------------------------- SETTINGS -----------------------------
 SYMBOL = "XAU/USD"
-BAR_MINUTES = 60          # candle size in minutes (60 = 1-hour candles)
-INTERVAL = "1h"           # must match BAR_MINUTES; change the schedule too
+BAR_MINUTES = 15          # candle size in minutes (60 = 1-hour candles)
+INTERVAL = "15min"           # must match BAR_MINUTES; change the schedule too
 CANDLES = 200             # how many past candles to download
-ALERT_SCORE = 3           # higher = fewer but stronger alerts (maximum is 6)
+ALERT_SCORE = 4           # higher = fewer but stronger alerts (maximum is 6)
 RSI_PERIOD = 14
 LEVEL_LOOKBACK = 20       # candles used to find recent support / resistance
 NEWS_HOURS = 8            # only headlines from the last N hours count
