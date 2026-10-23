@@ -1,5 +1,15 @@
 {
  "history": [],
- "last_entry_candle": null,
- "position": null
+ "last_entry_candle": "2026-10-23T12:15:00+00:00",
+ "position": {
+  "action": "SELL",
+  "breakeven": false,
+  "entry": 4024.65822,
+  "entry_candle_time": "2026-10-23T12:15:00+00:00",
+  "entry_close_time": "2026-10-23T12:30:00+00:00",
+  "last_checked": "2026-10-23T12:15:00+00:00",
+  "risk": 6.650972359454499,
+  "stop": 4031.3091923594543,
+  "target": 4014.681761460818
+ }
 }
