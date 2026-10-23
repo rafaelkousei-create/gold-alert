@@ -1,15 +1,16 @@
 {
- "history": [],
+ "history": [
+  {
+   "action": "SELL",
+   "closed": "2026-10-23T13:15:00+00:00",
+   "entry": 4024.65822,
+   "exit": 4031.3091923594543,
+   "opened": "2026-10-23T12:30:00+00:00",
+   "points": -6.650972359454499,
+   "r": -1.0,
+   "reason": "stop"
+  }
+ ],
  "last_entry_candle": "2026-10-23T12:15:00+00:00",
- "position": {
-  "action": "SELL",
-  "breakeven": false,
-  "entry": 4024.65822,
-  "entry_candle_time": "2026-10-23T12:15:00+00:00",
-  "entry_close_time": "2026-10-23T12:30:00+00:00",
-  "last_checked": "2026-10-23T12:15:00+00:00",
-  "risk": 6.650972359454499,
-  "stop": 4031.3091923594543,
-  "target": 4014.681761460818
- }
+ "position": null
 }
