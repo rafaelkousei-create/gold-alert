@@ -2,7 +2,7 @@ name: Gold alert
 
 on:
   schedule:
-    - cron: "3,18,33,48 * * * *"
+    - cron: "3,18,33,48 * * * *"   # 3 minutes after every 15-minute candle closes
   workflow_dispatch:
     inputs:
       test:
@@ -10,10 +10,17 @@ on:
         type: boolean
         default: false
 
+# Only one run at a time, so two runs never fight over the saved trade.
+concurrency:
+  group: gold-alert
+  cancel-in-progress: false
+
 jobs:
   check:
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    permissions:
+      contents: write   # lets the bot save state.json (its memory of the open trade)
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,3 +33,13 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
           TEST_MODE: ${{ github.event.inputs.test }}
+      - name: Save the bot's memory (state.json)
+        run: |
+          if [ -f state.json ]; then git add state.json; fi
+          if ! git diff --cached --quiet; then
+            git config user.name "gold-alert-bot"
+            git config user.email "gold-alert-bot@users.noreply.github.com"
+            git commit -m "Update trade state"
+            git pull --rebase
+            git push
+          fi
