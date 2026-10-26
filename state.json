@@ -71,6 +71,16 @@
    "reason": "breakeven"
   }
  ],
- "last_entry_candle": "2026-10-26T09:00:00+00:00",
- "position": null
+ "last_entry_candle": "2026-10-26T23:15:00+00:00",
+ "position": {
+  "action": "BUY",
+  "breakeven": false,
+  "entry": 4014.05915,
+  "entry_candle_time": "2026-10-26T23:15:00+00:00",
+  "entry_close_time": "2026-10-26T23:30:00+00:00",
+  "last_checked": "2026-10-26T23:15:00+00:00",
+  "risk": 4.557946423859903,
+  "stop": 4009.50120357614,
+  "target": 4020.89606963579
+ }
 }
