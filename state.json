@@ -109,18 +109,18 @@
    "points": -0.0,
    "r": -0.0,
    "reason": "breakeven"
+  },
+  {
+   "action": "BUY",
+   "closed": "2026-10-28T13:00:00+00:00",
+   "entry": 4050.88027,
+   "exit": 4050.88027,
+   "opened": "2026-10-28T12:15:00+00:00",
+   "points": 0.0,
+   "r": 0.0,
+   "reason": "breakeven"
   }
  ],
  "last_entry_candle": "2026-10-28T12:00:00+00:00",
- "position": {
-  "action": "BUY",
-  "breakeven": false,
-  "entry": 4050.88027,
-  "entry_candle_time": "2026-10-28T12:00:00+00:00",
-  "entry_close_time": "2026-10-28T12:15:00+00:00",
-  "last_checked": "2026-10-28T12:00:00+00:00",
-  "risk": 7.6761355246380845,
-  "stop": 4043.204134475362,
-  "target": 4062.3944732869572
- }
+ "position": null
 }
