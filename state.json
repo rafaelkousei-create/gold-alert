@@ -161,6 +161,16 @@
    "reason": "stop"
   }
  ],
- "last_entry_candle": "2026-10-29T18:15:00+00:00",
- "position": null
+ "last_entry_candle": "2026-10-29T23:30:00+00:00",
+ "position": {
+  "action": "SELL",
+  "breakeven": false,
+  "entry": 4011.77338,
+  "entry_candle_time": "2026-10-29T23:30:00+00:00",
+  "entry_close_time": "2026-10-29T23:45:00+00:00",
+  "last_checked": "2026-10-29T23:30:00+00:00",
+  "risk": 6.340041774709334,
+  "stop": 4018.1134217747094,
+  "target": 4002.2633173379363
+ }
 }
